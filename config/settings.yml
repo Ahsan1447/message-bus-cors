@@ -1,0 +1,6 @@
+plugins:
+  message_bus_cors_plugin_enabled:
+    default: false
+    client: true
+    description: "Enable custom CORS headers for MessageBus"
+  
