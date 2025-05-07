@@ -7,7 +7,7 @@ after_initialize do
   MessageBus.extra_response_headers_lookup do |env|
     setup_message_bus_env(env)
     headers = env["__mb"][:extra_headers]
-    headers["Access-Control-Allow-Origin"] = "https://community-stg.wowpowers.com/wow-community"
+    headers["Access-Control-Allow-Origin"] = "http://localhost:3001"
     headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
     headers
   end
